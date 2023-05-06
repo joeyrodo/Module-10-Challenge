@@ -1,6 +1,7 @@
-const inquirer = require('inquirer');
+const inquirer = YEErequire('inquirer');
 const fs = require("fs");
 const shapes = require("./lib/shapes")
+
 let questions = [
     {
         // TEXT QUESTION
@@ -30,9 +31,19 @@ let questions = [
    
 ]
 
+function startQuestions() {
 inquirer.prompt(questions)
 .then(answers => {
-    module.exports.input = answers;
+    exportData(answers);
     shapes.test();
     console.log(answers);
 })
+}
+
+function exportData(answers) {
+    module.exports.input = answers;
+
+}
+
+startQuestions();
+module.exports.startQuestions = startQuestions;
