@@ -36,6 +36,7 @@ function startQuestions() {
         .then(answers => {
             exportData(answers);
             shapes.start();
+            console.log("Generated logo.svg")
         })
 }
 
