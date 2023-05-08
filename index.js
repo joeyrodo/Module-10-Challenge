@@ -1,4 +1,4 @@
-const inquirer = YEErequire('inquirer');
+const inquirer = require('inquirer');
 const fs = require("fs");
 const shapes = require("./lib/shapes")
 
@@ -28,16 +28,15 @@ let questions = [
         name: 'shapeColor',
         message: 'Enter the color of the shape (keyword or hexidecimal): '
     },
-   
+
 ]
 
 function startQuestions() {
-inquirer.prompt(questions)
-.then(answers => {
-    exportData(answers);
-    shapes.test();
-    console.log(answers);
-})
+    inquirer.prompt(questions)
+        .then(answers => {
+            exportData(answers);
+            shapes.start();
+        })
 }
 
 function exportData(answers) {
