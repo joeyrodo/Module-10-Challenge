@@ -1,4 +1,4 @@
-# Module 10 Challenge - SVG Generator
+# SVG Generator
 
 [Video Demonstration](https://drive.google.com/file/d/1ed4UjfCYriBLEDmEnF2UilvU2GmP8oCI/view)
 
